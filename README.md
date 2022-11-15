@@ -3,7 +3,7 @@ Virtual Dynamic ID Card
 
 VDIC is a tag which we will be providing to every community member of e-DAM.
 
-This is a Business Card, ID Card, and A Key to many places.
+This is A Business Card, A Membership Card, A Technical Portfolio and A Key to many places, in your pocket.
 
 Validation - 
   We will be getting Industrial Mentors, and We will come up with a set of Rules and Regulations which a person has to complete to go up the ladder.
