@@ -1,4 +1,4 @@
-import React , {useContext} from 'react'
+import React , {useContext , useState} from 'react'
 import Banner from "../Components/Banner";
 
 import { Button, Stack, TextField, InputAdornment , FormControl } from "@mui/material";
@@ -14,7 +14,10 @@ import {Link} from "react-router-dom";
 const Registration = () => {
 
     const context = useContext(Context);
+
     const {typedIn , setTypedIn} = context;
+
+    const [inpassword,setInPassword] = useState('');
 
     React.useEffect(()=>{
         document.title = 'e-DAM | Registration';
@@ -65,10 +68,10 @@ const Registration = () => {
 
                 {/* Email and Passoword */}
                 <Stack width={'100%'} direction={'column'} spacing={"1.6rem"}>
-                    
+
                     <TextField fullWidth id="register_email" name='register_email' label="Email Address" variant="outlined" placeholder="Eg : johndoe123@gmail.com" color="secondary"/>
 
-                    <TextField fullWidth id="register_password" name='register_password' type={typedIn} label="Password" variant="outlined" placeholder="Password" color="secondary" helperText="Must have 8 characters including symbols (Eg : A76@cd9hd)"
+                    <TextField fullWidth id="register_password" name='register_password' type={typedIn} label="Password" variant="outlined" placeholder="Password" value={inpassword} onChange={(e)=>setInPassword(e.target.value)} color='secondary' helperText="Must have 8 characters including symbols (Eg : A76@cd9hd)"
                     InputProps={{
                     endAdornment: (
                     <InputAdornment position="end">

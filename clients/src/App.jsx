@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Login , Registration, SocialProfile, StudyDetails, UserLink } from './Pages'
+import { Login , Registration } from './Pages'
 
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
 
